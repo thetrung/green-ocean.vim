@@ -33,9 +33,30 @@ hi Function     guifg=#00FF00
 hi String       guifg=yellow   " 
 hi Number       guifg=#00FF00  " green
 hi Type         guifg=#00FF00   "gui=bold
-hi SpecialKey   guifg=white 
+" hi SpecialKey   guifg=white 
 
-" hi @variable              guifg=#009B00   "gui=bold
+" C syntax
+hi @variable.c                  guifg=#009B00 gui=bold " dark green 
+hi @variable.parameter.c        guifg=#009B00 " dark green
+" hi @_parent.c                   guifg=#009B00 " dark green
+hi @function.call.c             guifg=#7CFC00 gui=italic
+hi @punctuation.bracket.c       guifg=#7CFC00 gui=italic
+hi @punctuation.delimiter.c     guifg=#5FD7FF " bright blue-cyan
+
+hi @operator.c                  guifg=#00FF00 " bright green    
+
+hi @keyword.modifier.c          guifg=#5FD7FF " bright blue-cyan
+hi @keyword.repeat.c            guifg=#5FD7FF " bright blue-cyan
+hi @keyword.import.c            guifg=#5FD7FF " bright blue-cyan
+
+" hi @character.printf            guifg=#428BDD " blue-cyan
+
+hi @type.builtin.c              guifg=#5FD7FF " bright blue-cyan
+hi @constant.c                  guifg=#5FD7FF " bright blue-cyan
+hi @property.c                  guifg=#00FF00 " bright green
+hi @type.c                      guifg=#009B00 gui=italic " dark green
+
+" OCAML syntax 
 hi @variable.ocaml              guifg=#009B00 gui=bold 
 hi @variable.member.ocaml       guifg=#009B00 gui=italic
 hi @variable.parameter.ocaml    guifg=#009B00
