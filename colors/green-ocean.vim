@@ -20,9 +20,10 @@ let g:colors_name = "green-ocean"
 "
 
 " Editor UI
-hi Normal       guifg=#00FF00 guibg=#121E31
+hi Normal       guifg=#009B00 guibg=#121E31
 hi CursorLine   guibg=#262626
 hi LineNr       guifg=#5f5f5f
+hi StatusLine   guibg=#121E33 " Bottom StatusBar 
 
 " Syntax
 hi Comment      guifg=#428BDD   gui=italic "blue-ocean 
@@ -80,13 +81,13 @@ hi @property    guifg=#009B00   gui=bold " guifg of vim itself =))
 
 " FASM syntax 
 hi fasmNumericOperator guifg=#00FF00     " green / +-*:
-
-hi fasmInstr    guifg=#009B00            " dgreen / mov, call... 
+hi fasmLabel    guifg=#5FD7FF gui=bold
+hi fasmInstr    guifg=#5FD7FF gui=italic " dgreen / mov, call... 
 hi fasmNumber   guifg=#009B00 gui=bold   " dgreen / 123
-hi fasmRegister guifg=#009B00 gui=bold   " green / eax...
+hi fasmRegister guifg=#00FF00 gui=bold   " green / eax...
 hi fasmSymbol   guifg=#00FF00            " green / braces 
 hi fasmSpecial  guifg=#00FF00            " green / comma
 hi fasmComment  guifg=#428BDD            " blue-cyan / label: 
-
-hi fasmDirective      guifg=#5FD7FF " blue-cyan / format, section..
+hi fasmPreprocess     guifg=#5FD7FF gui=bold " blue-cyan / macro 
+hi fasmDirective      guifg=#5FD7FF gui=bold " blue-cyan / format, section..
 hi fasmDataDirectives guifg=#009B00 gui=bold " green
